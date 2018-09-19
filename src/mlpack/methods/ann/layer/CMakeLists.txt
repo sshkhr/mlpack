@@ -69,6 +69,8 @@ set(SOURCES
   multiply_merge_impl.hpp
   parametric_relu.hpp
   parametric_relu_impl.hpp
+  policygradient.hpp
+  policygradient_impl.hpp
   recurrent.hpp
   recurrent_impl.hpp
   recurrent_attention.hpp

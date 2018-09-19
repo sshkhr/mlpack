@@ -3,6 +3,8 @@
 set(SOURCES
   async_learning.hpp
   async_learning_impl.hpp
+  gae.hpp
+  gae_impl.hpp
   q_learning.hpp
   q_learning_impl.hpp
   training_config.hpp
