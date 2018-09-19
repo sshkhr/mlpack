@@ -272,8 +272,11 @@ class FFN
   //! Modify the matrix of data points (predictors).
   arma::mat& Predictors() { return predictors; }
 
+  //! Check whether the network is initialized or not.
+  bool Initialized() { return reset; }
+
   /**
-   * Reset the module infomration (weights/parameters).
+   * Reset the module information (weights/parameters).
    */
   void ResetParameters();
 

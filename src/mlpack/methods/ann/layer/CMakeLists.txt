@@ -71,10 +71,14 @@ set(SOURCES
   parametric_relu_impl.hpp
   policygradient.hpp
   policygradient_impl.hpp
+  policy.hpp
+  policy_impl.hpp
   recurrent.hpp
   recurrent_impl.hpp
   recurrent_attention.hpp
   recurrent_attention_impl.hpp
+  reinforce.hpp
+  reinforce_impl.hpp
   reinforce_normal.hpp
   reinforce_normal_impl.hpp
   reparametrization.hpp

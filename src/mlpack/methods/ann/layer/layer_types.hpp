@@ -36,6 +36,8 @@
 #include <mlpack/methods/ann/layer/mean_pooling.hpp>
 #include <mlpack/methods/ann/layer/parametric_relu.hpp>
 #include <mlpack/methods/ann/layer/policygradient.hpp>
+#include <mlpack/methods/ann/layer/policy.hpp>
+#include <mlpack/methods/ann/layer/reinforce.hpp>
 #include <mlpack/methods/ann/layer/reinforce_normal.hpp>
 #include <mlpack/methods/ann/layer/reparametrization.hpp>
 #include <mlpack/methods/ann/layer/select.hpp>
@@ -187,10 +189,12 @@ using LayerTypes = boost::variant<
     MultiplyConstant<arma::mat, arma::mat>*,
     MultiplyMerge<arma::mat, arma::mat>*,
     NegativeLogLikelihood<arma::mat, arma::mat>*,
+    Policy<arma::mat, arma::mat>*,
     PReLU<arma::mat, arma::mat>*,
     PolicyGradient<arma::mat, arma::mat>*,
     Recurrent<arma::mat, arma::mat>*,
     RecurrentAttention<arma::mat, arma::mat>*,
+    Reinforce<arma::mat, arma::mat>*,
     ReinforceNormal<arma::mat, arma::mat>*,
     Reparametrization<arma::mat, arma::mat>*,
     Select<arma::mat, arma::mat>*,
